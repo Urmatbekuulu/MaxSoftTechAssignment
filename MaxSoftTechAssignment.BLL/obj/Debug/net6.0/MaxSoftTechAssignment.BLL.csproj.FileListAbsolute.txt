@@ -1,0 +1,15 @@
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.BLL\bin\Debug\net6.0\MaxSoftTechAssignment.BLL.deps.json
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.BLL\bin\Debug\net6.0\MaxSoftTechAssignment.BLL.dll
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.BLL\bin\Debug\net6.0\MaxSoftTechAssignment.BLL.pdb
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.BLL\bin\Debug\net6.0\MaxSoftTechAssignment.DAL.dll
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.BLL\bin\Debug\net6.0\MaxSoftTechAssignment.DAL.pdb
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.BLL\obj\Debug\net6.0\MaxSoftTechAssignment.BLL.csproj.AssemblyReference.cache
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.BLL\obj\Debug\net6.0\MaxSoftTechAssignment.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.BLL\obj\Debug\net6.0\MaxSoftTechAssignment.BLL.AssemblyInfoInputs.cache
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.BLL\obj\Debug\net6.0\MaxSoftTechAssignment.BLL.AssemblyInfo.cs
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.BLL\obj\Debug\net6.0\MaxSoftTechAssignment.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.BLL\obj\Debug\net6.0\MaxSoftTechAssignment.BLL.csproj.CopyComplete
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.BLL\obj\Debug\net6.0\MaxSoftTechAssignment.BLL.dll
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.BLL\obj\Debug\net6.0\refint\MaxSoftTechAssignment.BLL.dll
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.BLL\obj\Debug\net6.0\MaxSoftTechAssignment.BLL.pdb
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.BLL\obj\Debug\net6.0\ref\MaxSoftTechAssignment.BLL.dll

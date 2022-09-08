@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSoftTechAssignment.BLL", "MaxSoftTechAssignment.BLL\MaxSoftTechAssignment.BLL.csproj", "{6913C2D8-ABEA-4A80-A4AB-1A39D6A9E0F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSoftTechAssignment.DAL", "MaxSoftTechAssignment.DAL\MaxSoftTechAssignment.DAL.csproj", "{74E73158-C995-4102-AE01-AD2E81646C85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSoftTechAssignment.WEB", "MaxSoftTechAssignment.WEB\MaxSoftTechAssignment.WEB.csproj", "{C9A2876A-C9E3-47AC-AB1C-4A04F4FC0202}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6913C2D8-ABEA-4A80-A4AB-1A39D6A9E0F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6913C2D8-ABEA-4A80-A4AB-1A39D6A9E0F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6913C2D8-ABEA-4A80-A4AB-1A39D6A9E0F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6913C2D8-ABEA-4A80-A4AB-1A39D6A9E0F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74E73158-C995-4102-AE01-AD2E81646C85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74E73158-C995-4102-AE01-AD2E81646C85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74E73158-C995-4102-AE01-AD2E81646C85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74E73158-C995-4102-AE01-AD2E81646C85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9A2876A-C9E3-47AC-AB1C-4A04F4FC0202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9A2876A-C9E3-47AC-AB1C-4A04F4FC0202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9A2876A-C9E3-47AC-AB1C-4A04F4FC0202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9A2876A-C9E3-47AC-AB1C-4A04F4FC0202}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

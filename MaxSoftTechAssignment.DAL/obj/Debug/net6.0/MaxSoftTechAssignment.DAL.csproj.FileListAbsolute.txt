@@ -1,0 +1,14 @@
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.DAL\bin\Debug\net6.0\MaxSoftTechAssignment.DAL.deps.json
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.DAL\bin\Debug\net6.0\MaxSoftTechAssignment.DAL.runtimeconfig.json
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.DAL\bin\Debug\net6.0\MaxSoftTechAssignment.DAL.dll
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.DAL\bin\Debug\net6.0\MaxSoftTechAssignment.DAL.pdb
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.DAL\obj\Debug\net6.0\MaxSoftTechAssignment.DAL.csproj.AssemblyReference.cache
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.DAL\obj\Debug\net6.0\MaxSoftTechAssignment.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.DAL\obj\Debug\net6.0\MaxSoftTechAssignment.DAL.AssemblyInfoInputs.cache
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.DAL\obj\Debug\net6.0\MaxSoftTechAssignment.DAL.AssemblyInfo.cs
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.DAL\obj\Debug\net6.0\MaxSoftTechAssignment.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.DAL\obj\Debug\net6.0\MaxSoftTechAssignment.DAL.dll
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.DAL\obj\Debug\net6.0\refint\MaxSoftTechAssignment.DAL.dll
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.DAL\obj\Debug\net6.0\MaxSoftTechAssignment.DAL.pdb
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.DAL\obj\Debug\net6.0\MaxSoftTechAssignment.DAL.genruntimeconfig.cache
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.DAL\obj\Debug\net6.0\ref\MaxSoftTechAssignment.DAL.dll
