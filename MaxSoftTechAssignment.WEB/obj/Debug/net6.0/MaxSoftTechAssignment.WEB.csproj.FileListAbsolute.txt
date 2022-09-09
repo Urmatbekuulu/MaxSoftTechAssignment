@@ -68,3 +68,12 @@ C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.WEB\b
 C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.WEB\bin\Debug\net6.0\MaxSoftTechAssignment.DAL.pdb
 C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.WEB\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.WEB\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.WEB\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.WEB\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.WEB\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.WEB\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.WEB\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.WEB\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.WEB\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.WEB\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\Raatbek\RiderProjects\MaxSoftTechAssignment\MaxSoftTechAssignment.WEB\bin\Debug\net6.0\Swashbuckle.AspNetCore.Newtonsoft.dll
