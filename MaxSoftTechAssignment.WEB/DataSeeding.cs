@@ -8,35 +8,50 @@ namespace MaxSoftTechAssignment.WEB;
 
 public static class DataSeeding
 {
-    public static async Task SeedDataAsync(UserManager<User> userManager,RoleManager<Role> roleManager,ApplicationDbContext dbContext,IConfiguration configuration)
+    public static async Task SeedDataAsync(UserManager<User> userManager,RoleManager<Role> roleManager
+        ,ApplicationDbContext dbContext,IConfiguration configuration)
     {
         IConfigurationSection adminSection = configuration.GetSection("Admin");
 
         var user = new SignIn
         {
-            Username = adminSection["Username"],
+            UserName = adminSection["Username"],
             Password = adminSection["Password"]
         };
         string email = adminSection["Email"];
-        
-        if (await userManager.FindByNameAsync(user.Username) == null)
+
+        var adminUser = await userManager.FindByNameAsync(user.UserName);
+        if ( adminUser != null)
         {
-            var adminUser = new User()
-            {
-                Name = user.Username,
-                UserName = user.Username,
-                Email = email
-               
-            };
-            var result = await userManager.CreateAsync(adminUser, user.Password);
+            var hashedPassword = userManager.PasswordHasher.HashPassword(adminUser, user.Password);
 
-            if (!result.Succeeded) throw new Exception("Admin is not created");
+            if(adminUser.PasswordHash == hashedPassword && adminUser.Email == email) return;
 
-            var role = await roleManager.FindByNameAsync(Constants.Admin);
+            adminUser.PasswordHash = hashedPassword;
+            adminUser.Email = email;
 
-            if (role == null) throw new Exception("Role not found");
+            var updateResult = await userManager.UpdateAsync(adminUser);
 
-            await userManager.AddToRoleAsync(adminUser, role.Name);
+            if (!updateResult.Succeeded) throw new Exception("Admin password is not updated");
+            
+            return;
         }
+
+        adminUser = new User()
+        {
+            UserName = user.UserName,
+            Email = email,
+        };
+        
+        var result = await userManager.CreateAsync(adminUser, user.Password);
+
+        if (!result.Succeeded) throw new Exception("Admin is not created");
+
+        var role = await roleManager.FindByNameAsync(Constants.Admin);
+
+        if (role == null) throw new Exception("Role not found");
+
+        await userManager.AddToRoleAsync(adminUser, role.Name);
+    
     }
 }

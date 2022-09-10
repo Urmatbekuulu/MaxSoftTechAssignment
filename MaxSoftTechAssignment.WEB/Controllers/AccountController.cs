@@ -25,15 +25,13 @@ public class AccountController:ControllerBase
     [HttpPost("/api/signin")]
     [SwaggerOperation(
         Summary = "SignIn",
-        Description = "",
-        OperationId = "",
-        Tags = new[]{""}
-        )]
+        Description = ""
+    )]
     public async Task<ActionResult<SignInResponse>> SignIn([FromBody] SignIn request)
     {
         if (!ModelState.IsValid) return BadRequest();
                 
-        var user = await _signInManager.UserManager.FindByNameAsync(request.Username);
+        var user = await _signInManager.UserManager.FindByNameAsync(request.UserName);
 
         if (user == null) return BadRequest();
 
