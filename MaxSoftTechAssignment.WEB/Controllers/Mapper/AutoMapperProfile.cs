@@ -1,5 +1,6 @@
 using AutoMapper;
 using MaxSoftTechAssignment.BLL.DTOs.AdminDtos;
+using MaxSoftTechAssignment.BLL.DTOs.ManageShopDtos;
 using MaxSoftTechAssignment.BLL.DTOs.SalesmanDtos;
 using MaxSoftTechAssignment.DAL.Entities;
 
@@ -12,6 +13,7 @@ public class AutoMapperProfile:Profile
         CreateMap<UserRegisterViewModel, User>().ReverseMap();
         CreateMap<ShopViewModel, Shop>().ReverseMap();
         CreateMap<User, SalesmanViewModel>().ReverseMap();
+        CreateMap<Product, ProductsListViewModel>().ReverseMap();
 
     }
     

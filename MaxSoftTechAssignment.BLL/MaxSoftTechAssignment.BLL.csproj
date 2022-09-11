@@ -10,8 +10,4 @@
       <ProjectReference Include="..\MaxSoftTechAssignment.DAL\MaxSoftTechAssignment.DAL.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="DTOs\ManageShopDtos" />
-    </ItemGroup>
-
 </Project>

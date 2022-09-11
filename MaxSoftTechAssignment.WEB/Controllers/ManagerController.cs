@@ -1,6 +1,8 @@
 using AutoMapper;
+using MaxSoftTechAssignment.BLL.DTOs.ManageShopDtos;
 using MaxSoftTechAssignment.DAL.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace MaxSoftTechAssignment.WEB.Controllers;
@@ -18,16 +20,19 @@ public class ManagerController:ControllerBase
         _mapper = mapper;
     }
     
-    [HttpGet("/api/manager/products")]
+    [HttpGet("/api/manager/products/{shopId:int}")]
     [SwaggerOperation(
         Summary = "Get products from manager's shops",
         Description = ""
     )]
-    public async Task<IActionResult> GetProductsAsync()
+    public async Task<ActionResult<IEnumerable<ProductsListViewModel>>> GetProductsListAsync(int shopId)
     {
-        //Not yet implemented
+        var products = await _dbContext.Products.Where(p => p.ShopId == shopId).ToListAsync();
+        var response = _mapper.Map<IEnumerable<ProductsListViewModel>>(products);
 
-        return BadRequest("Not yet implemented");
+        if (response is null) return BadRequest();
+
+        return Ok(response);
     }
     
     [HttpGet("/api/shop/information")]
