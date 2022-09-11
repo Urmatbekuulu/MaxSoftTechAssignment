@@ -7,11 +7,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MaxSoftTechAssignment.DAL.Data;
 
-public class ApplicationDbContext:IdentityDbContext<User>
+public class ApplicationDbContext:IdentityDbContext<User,Role,string>
 {
     public DbSet<Product> Products { get; set; }
     public DbSet<Shop> Shops { get; set; }
     public override DbSet<User> Users { get; set; }
+    public override DbSet<Role> Roles { get; set; }
+
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options)
     {
         
@@ -34,6 +36,25 @@ public class ApplicationDbContext:IdentityDbContext<User>
             .HasColumnType(SqlDbType.Money.ToString());
         
         
+        
+        // builder.Entity<Role>()
+        //     .HasMany(r => r.Users)
+        //     .WithMany(u => u.Roles)
+        //     .UsingEntity<RoleUser>();
+        //
+        // builder.Entity<User>()
+        //     .HasMany(u => u.Roles)
+        //     .WithMany(r => r.Users)
+        //     .UsingEntity<RoleUser>();
+
+
+
+
+
+
+
+
+
         base.OnModelCreating(builder);
     }
 }

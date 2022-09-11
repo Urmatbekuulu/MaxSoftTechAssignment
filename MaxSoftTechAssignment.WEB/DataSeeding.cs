@@ -20,6 +20,8 @@ public static class DataSeeding
         };
         string email = adminSection["Email"];
 
+        if (email == null || user == null) throw new Exception("Configuration is false");
+
         var adminUser = await userManager.FindByNameAsync(user.UserName);
         if ( adminUser != null)
         {

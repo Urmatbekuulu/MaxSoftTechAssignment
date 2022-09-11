@@ -1,12 +1,15 @@
 using MaxSoftTechAssignment.BLL.DTOs.AccountDtos;
+using MaxSoftTechAssignment.DAL;
 using MaxSoftTechAssignment.DAL.Entities;
 using MaxSoftTechAssignment.DAL.Interfaces;
+using MaxSoftTechAssignment.WEB.Configurations;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace MaxSoftTechAssignment.WEB.Controllers;
+
 
 public class AccountController:ControllerBase
 {
@@ -29,7 +32,7 @@ public class AccountController:ControllerBase
     )]
     public async Task<ActionResult<SignInResponse>> SignIn([FromBody] SignIn request)
     {
-        if (!ModelState.IsValid) return BadRequest();
+        if (!ModelState.IsValid) return BadRequest("Model is not valid");
                 
         var user = await _signInManager.UserManager.FindByNameAsync(request.UserName);
 

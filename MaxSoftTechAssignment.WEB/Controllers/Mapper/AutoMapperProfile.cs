@@ -14,6 +14,7 @@ public class AutoMapperProfile:Profile
         CreateMap<ShopViewModel, Shop>().ReverseMap();
         CreateMap<User, SalesmanViewModel>().ReverseMap();
         CreateMap<Product, ProductsListViewModel>().ReverseMap();
+        CreateMap<Product, ProductViewModel>().ReverseMap();
 
     }
     

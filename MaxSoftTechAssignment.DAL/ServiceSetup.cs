@@ -88,7 +88,7 @@ public static class ServiceSetup
                                 context.Token = token[0]["Token ".Length..].Trim();
                             }
                             return Task.CompletedTask;
-
+                    
                         },
                         OnAuthenticationFailed = context =>
                         {
