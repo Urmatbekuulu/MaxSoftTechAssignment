@@ -47,24 +47,27 @@ public class SalesmanController:ControllerBase
         return Ok(response);
     }
 
-    [HttpGet("/api/salesman/saleproduct/{productId:int}/{quantity:int?}")]
+    [HttpGet("/api/salesman/saleproduct/{productId:int}/{quantity:int}")]
     [SwaggerOperation(
         Summary = "Decrements the quantity of products, which means sold",
         Description = "Default sold quantity of product is 1"
     )]
-    public async Task<IActionResult> DecrementQuantityOfProduct(int productId, int quantity = 1)
+    public IActionResult DecrementQuantityOfProduct(int productId, int quantity = 1)
     {
+        IActionResult response = Ok();
         using (var scope = new TransactionScope(
                    TransactionScopeOption.Required,
                    new TransactionOptions { IsolationLevel = IsolationLevel.RepeatableRead }))
         {
             try
             {
-                var product = await _dbContext.Products.FindAsync(productId);
-            
-                if (product is null || product.Quantity < quantity)
-                    return BadRequest(
-                        "Transaction is impossible, product is not found, or quantity of product is not enough");
+                var product = _dbContext.Products.Find(productId);
+
+                if (product == null || product.Quantity < quantity)
+                    throw new Exception(
+                        "Transaction is impossible, " +
+                        "product is not found, or quantity of product is not enough");
+                
 
                 product.Quantity -= quantity;
 
@@ -72,13 +75,13 @@ public class SalesmanController:ControllerBase
 
                 scope.Complete();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return BadRequest("Transaction is not possible");
+                response = BadRequest(ex.Message);
             }
         }
         
-        return Ok();
+        return response;
     }
 
 }
